@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -6,35 +6,15 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import About from './components/About';
-import VideoPage from './components/VideoPage';
 
 function App() {
-  const [isFirstLoad, setIsFirstLoad] = useState(true); // Track first load
-
-  useEffect(() => {
-    // Check if the video has already been watched
-    const videoWatched = sessionStorage.getItem('videoWatched'); 
-
-    // If it has been watched, set isFirstLoad to false
-    if (videoWatched) {
-      setIsFirstLoad(false);
-    }
-  }, []);
-
   return (
     <Router>
       <div>
         <Routes>
-          {/* Show VideoPage only on first load */}
-          {isFirstLoad && (
-            <Route 
-              path="/" 
-              element={<VideoPage onVideoEnd={() => setIsFirstLoad(false)} />} 
-            />
-          )}
           {/* Default Home Route */}
           <Route
-            path="/home"
+            path="/"
             element={
               <>
                 <Navbar />
@@ -49,7 +29,7 @@ function App() {
           <Route path="/about" element={<><Navbar /><About /></>} />
 
           {/* Redirect any unmatched routes */}
-          <Route path="*" element={<Navigate to={isFirstLoad ? "/" : "/home"} />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>
