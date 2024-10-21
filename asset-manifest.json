@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jiya_portfolio/static/css/main.9598953f.css",
-    "main.js": "/jiya_portfolio/static/js/main.e2dcbc61.js",
+    "main.js": "/jiya_portfolio/static/js/main.25cf2df1.js",
     "static/js/453.1407b060.chunk.js": "/jiya_portfolio/static/js/453.1407b060.chunk.js",
     "static/media/COMPUTER-HOME.png": "/jiya_portfolio/static/media/COMPUTER-HOME.585246482b0a2672e138.png",
     "static/media/portfolio.jpg": "/jiya_portfolio/static/media/portfolio.cb4fa78008645fcf42db.jpg",
@@ -13,11 +13,11 @@
     "static/media/trailsoftoronto.jpg": "/jiya_portfolio/static/media/trailsoftoronto.3aea48174f9e80374bef.jpg",
     "index.html": "/jiya_portfolio/index.html",
     "main.9598953f.css.map": "/jiya_portfolio/static/css/main.9598953f.css.map",
-    "main.e2dcbc61.js.map": "/jiya_portfolio/static/js/main.e2dcbc61.js.map",
+    "main.25cf2df1.js.map": "/jiya_portfolio/static/js/main.25cf2df1.js.map",
     "453.1407b060.chunk.js.map": "/jiya_portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9598953f.css",
-    "static/js/main.e2dcbc61.js"
+    "static/js/main.25cf2df1.js"
   ]
 }
