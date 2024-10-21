@@ -1,0 +1,98 @@
+.contact {
+    padding: 5rem;
+    text-align: center;
+    background-color: #282c34; /* Dark background */
+    color: #f8f9fa; /* Light text color */
+    margin: 0 auto; /* Center the contact section */
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff385c; /* Title color */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align columns at the top */
+    gap: 40px; /* Space between columns */
+}
+
+.contact-info, .social-links {
+    flex: 1; /* Equal width for each column */
+    max-width: 400px; /* Limit the width of columns */
+    padding: 20px; /* Add padding inside the columns */
+    border-radius: 8px; /* Rounded corners for columns */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-info:hover, .social-links:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.contact-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff385c; /* Subtitle color */
+}
+
+.contact-text {
+    font-size: 1rem;
+}
+
+.contact-text strong {
+    color:#ff385c; /* Highlight the email label */
+}
+
+.social-links {
+    align-items: center; /* Center items horizontally */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white; /* Social icon color */
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s, text-shadow 0.3s; /* Smooth transition */
+    position: relative; /* Position relative for pseudo-element */
+}
+
+.social-icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Positioning under the text */
+    width: 100%;
+    height: 2px; /* Underline thickness */
+    background-color: #ff385c; /* Underline color */
+    transform: scaleX(0); /* Initial scale for animation */
+    transition: transform 0.3s ease; /* Smooth transition for the underline */
+}
+
+.social-icon:hover {
+    color:#ff385c; /* Hover color */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.social-icon:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+}
+.social-icon {
+    display: flex; /* Use flex to align items */
+    align-items: center; /* Center vertically */
+    text-decoration: none;
+    color: white; /* Social icon color */
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s, text-shadow 0.3s; /* Smooth transition */
+    position: relative; 
+}
+
+.social-icon svg {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.5rem; /* Size of the icons */
+}

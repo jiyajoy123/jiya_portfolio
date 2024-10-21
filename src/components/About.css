@@ -1,0 +1,64 @@
+.about {
+    padding: 5rem;
+    background-color: #282c34; 
+    color: white; 
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about__img {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 150px; 
+    border-radius: 50%; /* Circular profile picture */
+}
+
+.about__info {
+    text-align: center; /* Center align text */
+}
+
+.about__subtitle {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.about__profession {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about__text {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.about__social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between social links */
+}
+
+.about__social-icon {
+    color: #ff0049; /* Social icon color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+.about__social-icon:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
